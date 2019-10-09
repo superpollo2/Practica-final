@@ -1,0 +1,45 @@
+.logo{
+    width: 190px;
+    height: 150px;
+    position:absolute;
+    top:-8px;
+    left: 0%;
+}
+
+.home{
+  width: 70px;
+  height: 70px;
+  position:absolute;
+  top:-2px;
+  left: 82%;
+  transform: translate(-5%,3%);
+
+}
+
+#header{
+  Background:#FABADC;
+}
+#header a {
+  color: #fff;
+  font-size:18px;
+}
+#nom{
+  color:white;
+  font-size: 28px; 
+  position:absolute;
+  transform: translateX(150%);
+
+}
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:140px;
+
+  background:#FABADC;
+}
+#navbarNavDropdown{
+  margin-left: 70%;
+  bottom: 5%;
+ 
+}

@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand-lg  sticky-top" id="header">
+
+    <a class="navbar-brand" href=""><img class="logo" src="../../../assets/img/logo.png"></a>
+    <a class="navbar-brand" href="" id="nom"><h3>CocoBakery</h3></a>
+  
+    <button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+  
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="#" routerLink="/user/sign-in">sign-in </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user/registro">Registrarse</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="#" routerLink="home"><img class="home" src="../../../assets/img/bakery.png"></a>
+          </li>
+
+
+      </ul>
+  
+    </div>
+  </nav>
+
+  
+
+<div class="s5" data-spy="scroll" data-target="#header" data-offset="0">
+  <div class="registroBox">
+    <h1>Registro</h1>
+    <form #usuarioForm="ngForm" (ngSubmit)="addUsuario(usuarioForm)">
+        <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="usuarioService.selectedUsuario._id" >
+      <p>Nombres</p>
+      <input type="text" name="name" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.name" 
+        autocomplete="off" placeholder="Nombres">
+      <p>Apellidos</p>
+      <input type="text" name="apellido" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.apellido"
+        autocomplete="off" placeholder="Apellidos">
+      <p>Numero de identificacion</p>
+      <input type="text" name="id" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.identificacion" autocomplete="off"
+        placeholder="identificacion">
+      <p>Email</p>
+      <input type="text" name="correo" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.correo"
+        autocomplete="off" placeholder="Email">
+    
+      <p>Pais</p>
+      <input type="text" name="pais" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.pais"
+        autocomplete="off" placeholder="Pais">
+      <p>Contraseña</p>
+      <input type="password" name="contrasena" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.password"
+        autocomplete="off" placeholder="Contrasena"><br>
+      <input type="submit" name="crear" value="Crear cuenta">
+      <input type="button" name="borrar" (click)="resetForm(usuarioForm)" value="borrar">
+
+
+    </form>
+  </div>
+</div>
+
+
+
+<!--<div class="registroActual" data-spy="scroll" data-target="#header" data-offset="1">
+  <div class="col s7">
+    <table class="striped highlight black-text">
+      <thead>
+        <th>Name</th>
+        <th>Apellido</th>
+        <th>id</th>
+        <th>Correo</th>
+        <th>Pais</th>
+        <th>contrasena</th>
+        <th>Operaciones</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarioService.usuarios">
+          <td>{{ usuario.name }}</td>
+          <td>{{ usuario.apellido }}</td>
+          <td>{{ usuario.identificacion }}</td>
+          <td>{{ usuario.correo }}</td>
+          <td>{{ usuario.pais }}</td>
+          <td>{{ usuario.password }}</td>
+          <td>
+            <a (click)="editUsuario(usuario)">
+              <i class="material-icons">edit</i>
+            </a>
+            <a (click)="deleteUsuario(usuario._id, usuarioForm)">
+              <i class="material-icons">delete</i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>-->

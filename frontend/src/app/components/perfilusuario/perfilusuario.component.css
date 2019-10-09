@@ -1,0 +1,160 @@
+#infoUser{
+  background: #FABADC;
+  color: #fff;
+  
+  position: absolute;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+}
+
+.card p {
+  margin:0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.card input{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.card input[type="text"], input[type="password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline:none;
+  height: 40px;
+  color: #1a0012;
+  font-size: 15px;
+
+}
+
+.card input[type="submit"]{
+  border:none;
+  outline:none;
+  height: 35px;
+  background: #65d0f0;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 15px;
+
+}
+
+
+.card input[type="submit"]:hover{
+  cursor: pointer;
+  background: #37bee7;
+  color:#fff;
+
+}
+.card input[type="button"]{
+  border:none;
+  outline:none;
+  height: 35px;
+  background: #65d0f0;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 15px;
+
+}
+
+
+.card input[type="button"]:hover{
+  cursor: pointer;
+  background: #37bee7;
+  color:#fff;
+
+}
+.avatar{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position:absolute;
+  top:-90px;
+  left: calc(70% -50px);
+  background: #fff;
+}
+.infoUser h1 {
+  margin:0;
+  padding: 0 0 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.grafica{
+  width: 500px;
+  height: 600px;
+  background:  #FABADC;
+  color: #fff;
+  top: 45%;
+  left:68%;
+  position: absolute;
+  transform: translate(-53%,-34%);
+  box-sizing: border-box;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.logo{
+  width: 190px;
+  height: 150px;
+  position:absolute;
+  top:-8px;
+  left: calc(10% - 20px);
+}
+
+.home{
+width: 70px;
+height: 70px;
+position:absolute;
+top:-2px;
+left: calc(91% - 91px);
+
+}
+
+#header{
+Background:#FABADC;
+}
+#header a {
+color: #fff;
+font-size:18px;
+}
+
+
+.logo{
+  width: 190px;
+  height: 150px;
+  position:absolute;
+  top:-8px;
+  left: 0%;
+}
+
+.home{
+width: 70px;
+height: 70px;
+position:absolute;
+top:-2px;
+left: calc(91% - 91px);
+
+}
+
+#header{
+Background:#FABADC;
+}
+#header a {
+color: #fff;
+font-size:18px;
+}
+#nom{
+color:white;
+font-size: 28px; 
+position:absolute;
+}
+
+#navbarNavDropdown{
+  margin-left: 70%;
+  bottom: 5%;
+ 
+}

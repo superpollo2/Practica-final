@@ -1,0 +1,119 @@
+
+<nav class="navbar navbar-expand-lg  sticky-top" id="header">
+
+  <a class="navbar-brand" href=""><img class="logo" src="../../../assets/img/logo.png"></a>
+  <a class="navbar-brand" href="" id="nom"><h3>CocoBakery</h3></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+            <a class="nav-link" href="#" routerLink="home"><img class="home" src="../../../assets/img/bakery.png"></a>
+          </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#" routerLink = "/home">Sign up  |</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink = "/user/perfil">Perfil<i class="material-icons left">person_pin</i></a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row perfil">
+    <div class="col s6 push-s6 ">
+      <div class="row">
+        <div class="col s12  blue accent-1">
+          <h5>Registro de ventas</h5>
+        </div>
+        <div class="col s12 ">
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="col s6 pull-s6 ">
+      <div class="row">
+        <div class="col s9 push-s3 white">
+          <h5> Hola {{nombre}}!!!!</h5>
+        </div>
+        <div class="col s3 pull-s9 white">
+          <p>Nombre</p>
+
+        </div>
+      </div>
+
+      <div class="row registro">
+
+        <div id="infoUser" class="card">
+
+          <div class="card-content">
+
+
+            <form>
+              <p>Nombre</p>
+              <input type="text" name="name" disabled value="{{nombre}}">
+
+              <p>Apellidos</p>
+              <input type="text" name="apellido" disabled value="{{apellido}}">
+
+              <p>Id</p>
+              <input type="text" name="id" disabled value="{{identificacion}}">
+
+              <p>Email</p>
+              <input type="text" name="correo" disabled value="{{correo}}">
+
+              <p>Pais</p>
+              <input type="text" name="pais" disabled value="{{pais}}">
+
+
+
+              <input type="button" value="Actualizar informacion"> <i class="material-icons rigp">settings</i>
+
+
+              <div class="card-action">
+                <div class="row pli">
+                  <div class="input-field col s12">
+                    <input type="submit" value="guardar">
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<script>
+  $(document).ready(function () {
+    $(':input[type="submit"]').prop('disabled', true);
+    $('input[type="text"]').keyup(function () {
+      if ($(this).val() != '') {
+        $(':input[type="submit"]').prop('disabled', false);
+      }
+    });
+  });
+</script>

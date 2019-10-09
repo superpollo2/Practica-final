@@ -1,0 +1,198 @@
+body{
+    background-image: url('../../../assets/img/fondo2.jpg') ;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    top:0;
+    bottom: 0; 
+}
+.loginbox{
+    width: 320px;
+    height: 330px;
+    background: #FABADC;
+    color: #fff;
+    top: 35%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-35%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+}
+
+.loginbox p {
+    margin:0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline:none;
+    height: 40px;
+    color: #1a0012;
+    font-size: 15px;
+
+}
+
+.loginbox input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 35px;
+    background: #65d0f0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+
+}
+
+
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: hsl(194, 79%, 56%);
+    color:#fff;
+
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+    background: #fff;
+}
+.loginbox h1 {
+    margin:0;
+    padding: 0 0 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.registroLink{
+    width: 320px;
+    height: 100px;
+    background: #FABADC;
+    color: #fff;
+    margin-top: -2%;
+    top: 65%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,35%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.registroLink h1 {
+    margin:0;
+    padding: 0 0 8px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.registroLink input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.registroLink input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 35px;
+    background: #65d0f0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+
+}
+
+.registroLink input[type="submit"]:hover{
+    cursor: pointer;
+    background: #37bee7;
+    color:#fff;
+
+}
+
+.icon1 input[type="text"]{
+    padding-right: 3px;
+}
+
+.icon1{
+    position:relative;
+}
+.icon1 i{
+    position:absolute;
+    left:240px;
+    top: 10px;
+    padding:26px 0px;
+
+}
+
+.icon2 input[type="text"]{
+    padding-right: 3px;
+}
+
+.icon2{
+    position:relative;
+}
+
+.icon2 i{
+    position:absolute;
+    left:240px;
+    top: 10px;
+    padding:26px 0px;
+
+}
+
+.logo{
+    width: 190px;
+    height: 150px;
+    position:absolute;
+    top:-8px;
+    left: 0%;
+}
+
+.home{
+  width: 70px;
+  height: 70px;
+  position:absolute;
+  top:-2px;
+  left: 82%;
+  transform: translate(-5%,3%);
+
+}
+
+#header{
+  Background:#FABADC;
+}
+#header a {
+  color: #fff;
+  font-size:18px;
+}
+#nom{
+  color:white;
+  font-size: 28px; 
+  position:absolute;
+  transform: translateX(150%);
+
+}
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:140px;
+
+  background:#FABADC;
+}
+#navbarNavDropdown{
+  margin-left: 70%;
+  bottom: 5%;
+ 
+  }

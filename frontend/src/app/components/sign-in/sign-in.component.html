@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg  sticky-top" id="header">
+
+    <a class="navbar-brand" href=""><img class="logo" src="../../../assets/img/logo.png"></a>
+    <a class="navbar-brand" href="" id="nom"><h3>CocoBakery</h3></a>
+  
+    <button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+  
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="#" routerLink="/user/sign-in">sign-in </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user/registro">Registrarse</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="#" routerLink="home"><img class="home" src="../../../assets/img/bakery.png"></a>
+          </li>
+
+
+      </ul>
+  
+    </div>
+  </nav>
+
+    <div class="loginbox"  data-spy="scroll" data-target="#header" data-offset="0">
+        <img src="../../../assets/img/avatar.png" class="avatar">
+        <h1>SignIn</h1>
+        <form>
+          <div class="icon1">
+            <i class="material-icons" >info</i>
+            <p>Correo</p>
+            <input type="email" name="correoSignIn" [(ngModel)]="data.correo" placeholder="correo" autocomplete="off">
+          </div>
+      
+          <div class="icon2">
+            <i class="material-icons">info</i>
+            <p>Contraseña</p>
+            <input type="password" name="passwordSignIn" [(ngModel)]="data.password" placeholder="Contraseña"
+              autocomplete="off">
+          </div>
+      
+          <input type="submit" name="ingresar" (click)="signIn()"  value="sign In">
+        </form>
+      </div>
+      
+      <div class="registroLink">
+        <h1>¿No tienes una cuenta?</h1>
+        <input type="submit" name="linkregistro" value="Registrarse" (click)="rr()" >
+      </div>
+
+
+
+
